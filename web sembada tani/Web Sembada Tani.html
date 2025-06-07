@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sembada Tani</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #181717;
+      padding: 20px;
+    }
+
+    .logo img {
+      width: 100px;
+      height: auto;
+    }
+
+    .logo h1 {
+      color: rgb(126, 217, 85);
+      margin: 0;
+    }
+
+    .logo p {
+      margin: 5px 0 0;
+      color: white;
+      font-size: 14px;
+    }
+
+    .search-bar input {
+      padding: 5px;
+      width: 200px;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .fade-carousel {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+      position: relative;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .feature-card {
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      width: 300px;
+    }
+
+    .yellow { background-color: rgb(126, 217, 85); color: black; }
+    .black  { background-color: rgb(126, 217, 85); color: black; }
+    .grey   { background-color: rgb(126, 217, 85); color: black; }
+
+    .feature-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .news {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .map-section {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    iframe {
+      border: 0;
+      border-radius: 10px;
+      width: 90%;
+      height: 400px;
+    }
+
+    footer {
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      text-align: center;
+      margin: 10px;
+    }
+
+    button {
+      background-color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      color: black;
+    }
+
+    a button {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="sembada tani bulet.png" alt="Sembada Tani">
+      <h1>Sembada Tani</h1>
+      <p>PUSAT PROMOSI & PENJUALAN BIBIT POHON BUAH-BUAHAN HOLTICULTURA</p>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Cari">
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#tentang">Profile</a></li>
+      <li><a href="#bawah">Pelayanan</a></li>
+      <li><a href="#bawah">Produk</a></li>
+      <li><a href="#bawah">Maps</a></li>
+      <li><a href="#bawah">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <div class="fade-carousel">
+        <img src="IMG-20190226-WA0081_ODIzMj.jpg" class="slide active" alt="foto pohon 1">
+        <img src="foto pohon stan 1.jpg" class="slide" alt="foto pohon 2">
+        <img src="4e8d46719ab29bbd6ceb0548ff01f8b2.jpg" class="slide" alt="foto pohon 3">
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature-card yellow" id="tentang">
+        <img src="239563449_200793932098603_8175089145749193071_n.png" alt="logo sembada tani">
+        <h3>Sembada Tani</h3>
+        <p>Sembada Tani adalah sebuah usaha yang didirikan oleh Pak Pariman sejak lama. Sembada Tani tidak hanya menyediakan tanam-tanaman tetapi juga menyediakan berbagai macam media tanam hingga ke perawatannya.</p>
+      </div>
+      <div class="feature-card black">
+        <img src="pohon kotak.png" alt="foto pohon">
+        <h3>Yuk... Menanam Pohon!</h3>
+        <p>Menanam satu bibit pohon membantu menyerap polusi, menghasilkan oksigen, menjaga tanah, serta memberikan manfaat ekonomi dan lingkungan jangka panjang.</p>
+      </div>
+      <div class="feature-card grey">
+        <img src="Desain tanpa judul.png" alt="foto pupuk">
+        <h3>Perawatan Pohon</h3>
+        <p>Merawat pohon bisa dilakukan dengan rutin menyiram, menyiangi gulma di sekitarnya, memberi pupuk organik, dan melindunginya dari hama agar tumbuh sehat dan kuat.</p>
+      </div>
+    </section>
+
+    <section class="news">
+      <h2>Berita Terbaru!</h2>
+      <p>Kini Sembada Tani telah hadir di berbagai platform digital seperti Tokopedia dan Instagram</p>
+    </section>
+
+    <div class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.687818556893!2d106.8190263!3d-6.293886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f203d39bb461%3A0xd625d940fe18db53!2sPusat%20Penangkaran%20Bibit%20Ragunan!5e0!3m2!1sid!2sid!4v1717556065274!5m2!1sid!2sid" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </main>
+
+  <footer id="bawah">
+    <div class="footer-section">
+      <h3>Tokopedia</h3>
+      <p>Hari ini ada pohon apa aja ya?</p>
+      <a href="https://www.tokopedia.com/mengalun/product?utm_source=salinlink&utm_medium=share&utm_campaign=Shop-163856040-9230334-Semua" target="_blank">
+        <button>Lihat Toko</button>
+      </a>
+    </div>
+    <div class="footer-section">
+      <h3>Instagram</h3>
+      <p>Lihat konten produk kami di Instagram</p>
+      <a href="https://www.instagram.com/sembada.tani/" target="_blank">
+        <button>Menuju Instagram</button>
+      </a>
+    </div>
+    <div class="footer-section">
+      <h3>Hubungi kami</h3>
+      <p>Kami ada untuk menjawab pertanyaan Anda.</p>
+      <a href="https://wa.me/qr/S3VVPPR5PKTHN1" target="_blank">
+        <button>Hubungi Kami</button>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlides() {
+      slides.forEach((slide) => slide.classList.remove('active'));
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('active');
+    }
+
+    setInterval(showSlides, 3000);
+  </script>
+</body>
+</html>
